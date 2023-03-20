@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/beach.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main::before{
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/pain.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    mix-blend-mode: screen;
+}
